@@ -7,10 +7,11 @@ public class MainApp {
     public static void main(String[] args) {
         addAbonent("Даша", "+79031234567");
         addAbonent("Маша", "+79164353221");
+        addAbonent("Паша", "+70872357634");
         addAbonent("Даша", "+79262783292");
 
         getAbonent("Даша");
-        getAbonent();
+
     }
 
     public static void addAbonent(String name, String phone){
@@ -24,14 +25,6 @@ public class MainApp {
                 if (name.equals(abonents.get(i)[0])){
                     System.out.println(Arrays.toString(abonents.get(i)));
                 }
-            }
-        }
-    }
-    public static void getAbonent(){
-        if (!abonents.isEmpty()) {
-            System.out.println("Все абоненты листа:");
-            for (int i = 0; i < abonents.size(); i++) {
-                System.out.println(Arrays.toString(abonents.get(i)));
             }
         }
     }
